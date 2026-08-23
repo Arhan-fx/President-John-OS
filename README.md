@@ -3,15 +3,19 @@
 A meme presidential-themed web operating system.
 
 ![President John OS](screenshot.png)
+![President John OS](screenshot1.png)
+![President John OS](screenshot2.png)
+![President John OS](screenshot3.png)
+![President John OS](screenshot4.png)
+![President John OS](screenshot5.png)
 
-## Try Now
+## Quick Start
 
 **[Launch President John OS](https://president-john-os.vercel.app/)**
 
-> The load may take around 10 seconds. Please wait for the OS to initialise properly before testing it.
+Please consider to give a star to this repo
 
-
-### Run locally
+### Run locally if you want little inconvenience 
 
 ```bash
 git clone https://github.com/Arhan-fx/President-John-OS.git
@@ -34,30 +38,23 @@ http://localhost:8000
 
 ---
 
-## Features in JohnOS
+## Features 
 
-*  **Freedomotes** built-in notes experience for writing and storing content.
-*  **Freedomculator** dedicated calculator application.
-*  **Integrated Audio**  includes custom anthem audio.
-*  **No Framework Required** since it runs on web browser
+*  This is among the most flagship OS you can find in the market
+*  This thing is only made for government work
+*  This thing comes with an app that apple did not dared to introduce in ipads till IOS26 update which is the ## CALCULATOR
+*  This OS also has a great feature to write down your freedom methods in freedomotes
+*  One of the most flagship thing this OS has to offer is FreedomSound, so you keep feeling patriotic while doing your work
 
 ---
 
-## 🧠 How It Works
-
-President John OS is built as a **web application** that recreates the feeling of using a desktop operating system inside a browser.
-
-The interface is built with standard **HTML, CSS, and JavaScript**, keeping the project lightweight and easy to run without a complicated build system or backend.
-
-The project focuses heavily on the funny **UI experience**
----
 
 ## 🛠️ Built With
 
-* **HTML5** used for application structure
-* **CSS3** used for visual design
-* **JavaScript** used for OS functionality
-* **Vercel** used for Deployment
+* **HTML5** used for application structure (Just like a body for a plane)
+* **CSS3** used for visual design (Same as adding camouflage to a F-22 )
+* **JavaScript** used for OS functionality (Oil from every other nation)
+* **Vercel** used for Deployment (A patriotic pilot who spread freedom)
 
 ---
 
@@ -66,7 +63,7 @@ The project focuses heavily on the funny **UI experience**
 
 ## Credits
 
-Created by **ME**
+Created by **ME and John Politican**
 
 
 * GitHub: **[@Arhan-fx](https://github.com/Arhan-fx)**
