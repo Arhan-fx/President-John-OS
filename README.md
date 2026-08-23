@@ -42,7 +42,7 @@ http://localhost:8000
 
 *  This is among the most flagship OS you can find in the market
 *  This thing is only made for government work
-*  This thing comes with an app that apple did not dared to introduce in ipads till IOS26 update which is the ## CALCULATOR
+*  This thing comes with an app that apple did not dared to introduce in ipads till IOS26 update which is the **CALCULATOR
 *  This OS also has a great feature to write down your freedom methods in freedomotes
 *  One of the most flagship thing this OS has to offer is FreedomSound, so you keep feeling patriotic while doing your work
 
