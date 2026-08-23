@@ -2,7 +2,7 @@
 
 A meme presidential-themed web operating system.
 
-![President John OS](emblem.png)
+![President John OS](screenshot.png)
 
 ## Try Now
 
@@ -74,4 +74,4 @@ Created by **ME**
 
 
 
-![JohnOS](screenshot.png)
+![JohnOS](emblem.png)
