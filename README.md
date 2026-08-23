@@ -8,7 +8,7 @@ A meme presidential-themed web operating system.
 
 **[Launch President John OS](https://president-john-os.vercel.app/)**
 
-> The load may take around 10 seconds. Please wait for the OS to initialise.
+> The load may take around 10 seconds. Please wait for the OS to initialise properly before testing it.
 
 
 ### Run locally
@@ -36,10 +36,10 @@ http://localhost:8000
 
 ## Features in JohnOS
 
-*  **Freedomotes** — A built-in notes experience for writing and storing content.
-*  **Freedomculator** — A dedicated calculator application.
-*  **Integrated Audio** — Includes custom anthem audio.
-*  **No Framework Required** 
+*  **Freedomotes** built-in notes experience for writing and storing content.
+*  **Freedomculator** dedicated calculator application.
+*  **Integrated Audio**  includes custom anthem audio.
+*  **No Framework Required** since it runs on web browser
 
 ---
 
@@ -93,4 +93,4 @@ It is not an actual operating system and is not affiliated with or endorsed by a
 
 </p>
 
-![President John OS](Screenshot 2026-08-23 094008.png)
+![President John OS](johnosss.png)
