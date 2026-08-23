@@ -1,6 +1,6 @@
 # President John OS
 
-A fictional presidential-themed web interactive operating system.
+A meme presidential-themed web operating system.
 
 ![President John OS](emblem.png)
 
