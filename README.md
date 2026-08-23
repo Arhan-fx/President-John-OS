@@ -1,4 +1,4 @@
-# 🇺🇸 President John OS
+# President John OS
 
 A fictional presidential-themed web interactive operating system.
 
@@ -93,4 +93,4 @@ It is not an actual operating system and is not affiliated with or endorsed by a
 
 </p>
 
-![President John OS](emblem.png)
+![President John OS](Screenshot 2026-08-23 094008.png)
