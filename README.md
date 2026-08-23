@@ -1,4 +1,4 @@
-# President John OS
+# JohnOS
 
 A meme presidential-themed web operating system.
 
@@ -49,7 +49,7 @@ President John OS is built as a **web application** that recreates the feeling o
 
 The interface is built with standard **HTML, CSS, and JavaScript**, keeping the project lightweight and easy to run without a complicated build system or backend.
 
-The project focuses heavily on the **UI experience**
+The project focuses heavily on the funny **UI experience**
 ---
 
 ## 🛠️ Built With
@@ -73,24 +73,5 @@ Created by **ME**
 * Repository: **[President-John-OS](https://github.com/Arhan-fx/President-John-OS)**
 
 
----
 
-## ⚠️ Disclaimer
-
-President John OS is a **fictional and experimental project** created for entertainment and educational purposes.
-
-It is not an actual operating system and is not affiliated with or endorsed by any real government, political organisation, or public figure.
-
----
-
-<p align="center">
-
-🇺🇸 **President John OS**
-
-*The presidential operating system you didn't know you needed.*
-
-⭐ If you enjoyed the project, consider starring the repository.
-
-</p>
-
-![President John OS](johnosss.png)
+![JohnOS](johnosss.png)
