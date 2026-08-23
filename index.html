@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JohnOS</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <div class="top-bar" id="top">
+    <div class="top-bar-left">
+      <p class="os-name" id="topBarTitle">JohnOS</p>
+      <img id="welcomeopen" src="emblem.png" class="welcome-open" alt="Open Welcome">
+    </div>
+    <div class="top-bar-right">
+      <p class="time-element" id="utcTime"></p>
+    </div>
+  </div>
+
+<div id="desktopapps" class="desktop-icons">
+    <div id="notesIcon" class="app-icon">
+      <img alt="Notes" class="notes-icon" src="freedomnotes.png">
+      <p class="app-label">Freedomotes</p>
+    </div>
+    <div id="calcIcon" class="app-icon">
+      <img alt="Calculator" class="notes-icon" src="freedomculator.png">
+      <p class="app-label">Freedomculator</p>
+    </div>
+    <div id="anthemIcon" class="app-icon">
+      <img alt="National Anthem" class="notes-icon" src="freedom.png">
+      <p class="app-label">FreedomSound</p>
+    </div>
+  </div>
+
+  <div id="welcome" class="welcome-window">
+    <div id="welcomeheader" class="welcome-header">
+      <p class="welcome-text">Welcome</p>
+      <div id="welcomeclose" class="close">✕</div>
+    </div>
+    <div class="inside-welcome">
+      <img src="emblem.png" class="welcome-icon" alt="Welcome Icon"/>
+      <h1 class="inside-text">JohnOS</h1>
+      <p>
+        <dfn>JohnOS</dfn> is the best OS to spread <abbr title="Operating System"> Freedom </abbr>. Welcome to JohnOS
+        <code>"What the hell is a kilometer"</code>
+      </p>
+    </div>
+  </div>
+
+  <div id="notes" class="notes-window" style="display: none;">
+    <div id="notesheader" class="notes-header">
+      <p class="header-text">FreedomNotes</p>
+      <div class="close" id="notesclose">✕</div>
+    </div>
+    <div class="notes-body">
+      <div class="notes-sidebar-container">
+        <div id="newNoteBtn" class="newnotebtn">+ New Note</div>
+        <div id="sidebar" class="notes-sidebar"></div>
+      </div>
+      <div class="notes-main">
+        <div class="notes-toolbar">
+          <button type="button" class="toolbar-btn" onclick="formatDoc('bold')" title="Bold"><b>B</b></button>
+          <button type="button" class="toolbar-btn" onclick="formatDoc('italic')" title="Italic"><i>I</i></button>
+          <button type="button" class="toolbar-btn" onclick="formatDoc('underline')" title="Underline"><u>U</u></button>
+          <button type="button" class="toolbar-btn" onclick="formatDoc('insertUnorderedList')" title="Bullet list">☰</button>
+        </div>
+        <input type="text" id="noteTitleInput" class="note-title-input" placeholder="Title" />
+        <p class="note-date-label" id="noteDateLabel"></p>
+        <div id="notesContent" class="notes-editor" contenteditable="true"></div>
+      </div>
+    </div>
+  </div>
+
+<div id="calculator" class="calc-window" style="display: none;">
+  <div id="calculatorheader" class="notes-header">
+    <p class="header-text">Freedomculator</p>
+    <div class="close" id="calcclose">✕</div>
+  </div>
+  <div class="calc-body">
+    <input type="text" id="calcDisplay" readonly value="0">
+    <div class="calc-grid">
+      <button class="calc-btn func" onclick="clearCalc()">C</button>
+      <button class="calc-btn func" onclick="toggleSign()">+/-</button>
+      <button class="calc-btn func" onclick="percentCalc()">%</button>
+      <button class="calc-btn op" onclick="appendCalc('/')">÷</button>
+
+      <button class="calc-btn" onclick="appendCalc('7')">7</button>
+      <button class="calc-btn" onclick="appendCalc('8')">8</button>
+      <button class="calc-btn" onclick="appendCalc('9')">9</button>
+      <button class="calc-btn op" onclick="appendCalc('*')">×</button>
+
+      <button class="calc-btn" onclick="appendCalc('4')">4</button>
+      <button class="calc-btn" onclick="appendCalc('5')">5</button>
+      <button class="calc-btn" onclick="appendCalc('6')">6</button>
+      <button class="calc-btn op" onclick="appendCalc('-')">-</button>
+
+      <button class="calc-btn" onclick="appendCalc('1')">1</button>
+      <button class="calc-btn" onclick="appendCalc('2')">2</button>
+      <button class="calc-btn" onclick="appendCalc('3')">3</button>
+      <button class="calc-btn op" onclick="appendCalc('+')">+</button>
+
+      <button class="calc-btn zero" onclick="appendCalc('0')">0</button>
+      <button class="calc-btn" onclick="appendCalc('.')">.</button>
+      <button class="calc-btn eq" onclick="calculateResult()">=</button>
+    </div>
+  </div>
+</div>
+
+  <div id="anthem" class="anthem-window" style="display: none;">
+    <div id="anthemheader" class="notes-header">
+      <p class="header-text">Freedom Sound</p>
+      <div class="close" id="anthemclose">✕</div>
+    </div>
+    <div class="anthem-body">
+      <p class="anthem-status" id="anthemStatus">Press play to listen</p>
+      <audio id="anthemAudio" src="anthem.mp3"></audio>
+      <button id="anthemToggle" class="anthem-btn">▶ Play</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
