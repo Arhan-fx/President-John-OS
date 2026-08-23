@@ -74,4 +74,4 @@ Created by **ME**
 
 
 
-![JohnOS](johnosss.jpeg)
+![JohnOS](screenshot.png)
