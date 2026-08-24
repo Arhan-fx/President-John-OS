@@ -17,6 +17,13 @@ and this operating systems has three apps to offer at this moment.
 *  Freedomotes 
 *  FreedomSound
 
+## Planned Upcoming Features
+
+* FreedomTester
+* Lock Screen for security purpose
+* New Wallpaper
+* Freedom Magzine
+* Freedom search engine
 ---
 
 
