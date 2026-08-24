@@ -1,4 +1,4 @@
-# JohnOS
+# President JohnOS
 
 A meme presidential-themed web operating system.
 
@@ -33,9 +33,6 @@ and this operating systems has three apps to offer at this moment.
 * **CSS3** 
 * **JavaScript** 
 * **Vercel** 
-
----
-
 
 ---
 
