@@ -24,7 +24,7 @@ and this operating systems has built in security system and many more apps!
 * Freedom Magzine
 * Freedom Browser
 
-## New Features
+## Upcoming Features
 * Freedom Call dailer
 * National Reserver App
 * Nuke Button
