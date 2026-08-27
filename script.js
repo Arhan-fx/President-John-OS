@@ -432,5 +432,134 @@ if (anthemToggle && anthemAudio) {
     }
     anthemAudio.currentTime = 0;
   });
+
+  var wallpaperWindow = document.querySelector("#wallpaper");
+ var wallpaperWindowClose = document.querySelector("#wallpaperclose");
+ var wallpaperIcon = document.querySelector("#wallpaperIcon");
+ var wallpaperOne = document.querySelector("#wallpaperOne");
+ var wallpaperTwo = document.querySelector("#wallpaperTwo");
+var wallpaperThree = document.querySelector("#wallpaperThree");
+
+dragElement(wallpaperWindow);
+addWindowTapHandling(wallpaperWindow);
+
+
+if (wallpaperIcon) {
+  wallpaperIcon.addEventListener("click", function () {
+    openWindow(wallpaperWindow);
+  });
 }
 
+
+if (wallpaperWindowClose) {
+  wallpaperWindowClose.addEventListener("click", function () {
+    closeWindow(wallpaperWindow);
+  });
+}
+
+
+function changeWallpaper(image) {
+
+  document.body.style.backgroundImage = "url(" + image + ")";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+
+}
+
+if (wallpaperOne) {
+  wallpaperOne.addEventListener("click", function () {
+    changeWallpaper("johnpolitician.jpeg");
+  });
+}
+
+
+if (wallpaperTwo) {
+  wallpaperTwo.addEventListener("click", function () {
+    changeWallpaper("wallpaper2.jpg");
+  });
+}
+
+
+if (wallpaperThree) {
+  wallpaperThree.addEventListener("click", function () {
+    changeWallpaper("wallpaper3.jpg");
+  });
+}
+
+}
+
+var browserWindow = document.querySelector("#browser");
+var browserWindowClose = document.querySelector("#browserclose");
+var browserIcon = document.querySelector("#browserIcon");
+var browserHomeSearch = document.querySelector("#browserHomeSearch");
+var browserHomeGo = document.querySelector("#browserHomeGo");
+
+dragElement(browserWindow);
+addWindowTapHandling(browserWindow);
+
+
+if (browserIcon) {
+  browserIcon.addEventListener("click", function () {
+    openWindow(browserWindow);
+  });
+}
+if (browserWindowClose) {
+  browserWindowClose.addEventListener("click", function () {
+    closeWindow(browserWindow);
+  });
+}
+
+function searchGoogle(searchQuery) {
+
+  searchQuery = searchQuery.trim();
+
+  if (searchQuery === "") {
+    return;
+  }
+
+  window.open(
+    "https://www.google.com/search?q=" + encodeURIComponent(searchQuery),
+    "_blank"
+  );
+
+}
+
+if (browserHomeGo) {
+  browserHomeGo.addEventListener("click", function () {
+
+    searchGoogle(browserHomeSearch.value);
+
+  });
+}
+
+
+if (browserHomeSearch) {
+  browserHomeSearch.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+      searchGoogle(browserHomeSearch.value);
+    }
+
+  });
+}
+
+var magazineWindow = document.querySelector("#magazine");
+var magazineWindowClose = document.querySelector("#magazineclose");
+var magazineIcon = document.querySelector("#magazineIcon");
+
+dragElement(magazineWindow);
+addWindowTapHandling(magazineWindow);
+
+
+if (magazineIcon) {
+  magazineIcon.addEventListener("click", function () {
+    openWindow(magazineWindow);
+  });
+}
+
+if (magazineWindowClose) {
+  magazineWindowClose.addEventListener("click", function () {
+    closeWindow(magazineWindow);
+  });
+}
