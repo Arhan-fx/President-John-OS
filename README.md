@@ -2,7 +2,7 @@
 
 A meme presidential-themed web operating system.
 
-![President John OS](screenshot2.png)
+![President John OS](newss.png)
 
 ## About
 
