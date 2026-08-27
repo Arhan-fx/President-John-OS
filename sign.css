@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("johnpolitician.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e4e7eb;
+  overflow: hidden;
+  user-select: none;
+}
+
+.sign-screen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+
+.sign-time-container {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
+}
+
+.sign-time {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.sign-date {
+  margin: 5px 0 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.sign-window {
+  width: 310px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(18, 20, 38, 0.78);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.6);
+}
+
+.sign-profile-container {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-profile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.sign-progress {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sign-progress.active {
+  opacity: 1;
+}
+
+.sign-progress-spinner {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
+  border-right-color: #ffffff;
+  animation: signProgressAnimation 0.8s linear infinite;
+}
+
+@keyframes signProgressAnimation {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+.sign-name {
+  margin: 15px 0 2px;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.sign-os-name {
+  margin: 0 0 22px;
+  color: #aeb8d0;
+  font-size: 12px;
+}
+
+.sign-in-btn {
+  width: 150px;
+  padding: 10px 20px;
+  background: #0033cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.sign-in-btn:hover {
+  background: #1648e8;
+  transform: scale(1.04);
+}
+
+.sign-in-btn:active {
+  transform: scale(0.97);
+}
+
+
+
+
+.sign-footer {
+  position: absolute;
+  bottom: 18px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
