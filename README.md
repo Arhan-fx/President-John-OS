@@ -7,7 +7,7 @@ A meme presidential-themed web operating system.
 ## About
 
 President JohnOS is a browser based Operating System built with HTML, CSS, JAVA SCRIPT
-and this operating systems has three apps to offer at this moment.
+and this operating systems has built in security system and many more apps!
 
 **[Demo ](https://president-john-os.vercel.app/)**
 
@@ -17,13 +17,17 @@ and this operating systems has three apps to offer at this moment.
 *  Freedomotes 
 *  FreedomSound
 
-## Planned Upcoming Features
+## New Features
 
-* FreedomTester
 * Lock Screen for security purpose
 * New Wallpaper
 * Freedom Magzine
-* Freedom search engine
+* Freedom Browser
+
+## New Features
+* Freedom Call dailer
+* National Reserver App
+* Nuke Button
 ---
 
 
