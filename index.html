@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
+<script>
+  if (sessionStorage.getItem("johnosSignedIn") !== "true") {
+    window.location.href = "sign.html";
+  }
+</script>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JohnOS</title>
-  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="top-bar" id="top">
@@ -30,6 +37,18 @@
       <img alt="National Anthem" class="notes-icon" src="freedom.png">
       <p class="app-label">FreedomSound</p>
     </div>
+    <div id="wallpaperIcon" class="app-icon">
+       <img alt="Wallpaper" class="notes-icon" src="wallpaper.png">
+       <p class="app-label">Wallpapers</p>
+     </div>
+     <div id="browserIcon" class="app-icon">
+       <img alt="Browser" class="notes-icon" src="browser.png">
+       <p class="app-label">Freedom Browser</p>
+     </div>
+     <div id="magazineIcon" class="app-icon">
+        <img alt="Freedom Magazine" class="notes-icon" src="magzine.png">
+         <p class="app-label">Freedom Magazine</p>
+     </div>
   </div>
 
   <div id="welcome" class="welcome-window">
@@ -117,7 +136,112 @@
       <button id="anthemToggle" class="anthem-btn">▶ Play</button>
     </div>
   </div>
+    <div id="wallpaper" class="wallpaper-window" style="display: none;">
 
+    <div id="wallpaperheader" class="notes-header">
+      <p class="header-text">Wallpapers</p>
+      <div class="close" id="wallpaperclose">✕</div>
+    </div>
+
+    <div class="wallpaper-body">
+
+      <div class="wallpaper-item" id="wallpaperOne">
+        <img src="johnpolitician.jpeg" alt="Wallpaper One">
+        <p>John</p>
+      </div>
+
+      <div class="wallpaper-item" id="wallpaperTwo">
+        <img src="wallpaper2.jpg" alt="Wallpaper Two">
+        <p>Brrtttt</p>
+      </div>
+
+      <div class="wallpaper-item" id="wallpaperThree">
+        <img src="wallpaper3.jpg" alt="Wallpaper Three">
+        <p>Pride Eagle</p>
+      </div>
+
+    </div>
+
+  </div>  
+   
+  <div id="browser" class="browser-window" style="display: none;">
+
+  <div id="browserheader" class="notes-header">
+    <p class="header-text">Freedom Browser</p>
+    <div class="close" id="browserclose">✕</div>
+  </div>
+
+  <div class="browser-body">
+
+
+    <div class="browser-home">
+
+      <img src="emblem.png" class="browser-logo" alt="JohnOS">
+
+      <h1>Freedom Browser</h1>
+      <p>Search the web with freedom.</p>
+
+      <div class="browser-home-search">
+
+        <input
+          type="text"
+          id="browserHomeSearch"
+          placeholder="Search Google"
+        >
+        <button id="browserHomeGo" class="browser-go-btn">
+          Search
+        </button>
+
+         </div>
+      </div>
+    </div>
+
+   </div>
+   <div id="magazine" class="magazine-window" style="display: none;">
+
+  <div id="magazineheader" class="notes-header">
+    <p class="header-text">Freedom Magazine</p>
+    <div class="close" id="magazineclose">✕</div>
+  </div>
+
+  <div class="magazine-body">
+
+    <div class="magazine-grid">
+
+      <div class="magazine-item">
+        <img src="magazine1.jpg" alt="Magazine Image 1">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine2.jpg" alt="Magazine Image 2">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine3.jpg" alt="Magazine Image 3">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine4.jpg" alt="Magazine Image 4">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine5.jpg" alt="Magazine Image 5">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine6.jpg" alt="Magazine Image 6">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine7.jpg" alt="Magazine Image 7">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine8.jpeg" alt="Magazine Image 8">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine9.jpg" alt="Magazine Image 9">
+      </div>
+      <div class="magazine-item">
+        <img src="magazine10.jpg" alt="Magazine Image 10">
+      </div>
+    </div>
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
+
