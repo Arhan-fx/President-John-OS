@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JohnOS Sign In</title>
+  <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+  <div id="signScreen" class="sign-screen">
+    <div class="sign-time-container">
+      <p id="signTime" class="sign-time"></p>
+      <p id="signDate" class="sign-date"></p>
+    </div>
+
+    <div id="signWindow" class="sign-window">
+      <div class="sign-profile-container">
+        <img
+          src="emblem.png"
+          class="sign-profile"
+          alt="JohnOS Profile"
+        >
+        <div id="signProgress" class="sign-progress">
+          <div class="sign-progress-spinner"></div>
+        </div>
+      </div>
+      <p class="sign-name">John</p>
+      <p class="sign-os-name">JohnOS</p>
+      <button id="signInBtn" class="sign-in-btn">
+        Sign In
+      </button>
+    </div>
+
+    <p class="sign-footer">JohnOS</p>
+  </div>
+  <audio id="signInSound" src="signin.mp3"></audio>
+  <script src="sign.js"></script>
+
+</body>
+</html>
